@@ -2,7 +2,7 @@ import React from "react";
 
 interface Props {
     text: string;
-    onClick?: () => void;
+    onClick?: React.MouseEventHandler<HTMLButtonElement>;
     className?: string;
 }
 
