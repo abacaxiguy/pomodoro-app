@@ -1,3 +1,9 @@
+:root {
+    --pomodoro-color: #ba4949;
+    --short-break-color: #38858a;
+    --long-break-color: #397097;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +12,12 @@
 }
 
 body {
-    font-family: sans-serif;
-    background: #124ab3;
+    font-family: Poppins, sans-serif;
+    background: var(--pomodoro-color);
     color: white;
     transition: background-color 0.3s ease-in-out;
     line-height: 1.5;
+    letter-spacing: 0.5px;
 }
 
 .container {
@@ -18,8 +25,12 @@ body {
     margin: 0 auto;
 }
 
-.working {
-    background: #c01313;
+.short-break {
+    background: var(--short-break-color);
+}
+
+.long-break {
+    background: var(--long-break-color);
 }
 
 .hidden {
@@ -50,7 +61,7 @@ body {
     box-shadow: rgb(235, 235, 235) 0px 6px 0px;
     font-size: 22px;
     height: 55px;
-    color: #124ab3;
+    color: var(--pomodoro-color);
     font-weight: bold;
     width: 200px;
     background-color: white;
@@ -63,8 +74,12 @@ body {
     box-shadow: none;
 }
 
-.working .pomodoro button {
-    color: #c01313;
+.short-break .pomodoro button {
+    color: var(--short-break-color);
+}
+
+.long-break .pomodoro button {
+    color: var(--long-break-color);
 }
 
 .pomodoro .details {
