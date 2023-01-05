@@ -38,22 +38,20 @@ body {
 }
 
 .pomodoro {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.15);
     margin: 50px 20px;
     padding: 20px;
     border-radius: 4px;
     text-align: center;
 }
 
-.pomodoro h2 {
-    font-size: 24px;
-}
-
 .pomodoro .timer {
+    letter-spacing: -3px;
+    font-weight: bold;
     font-size: 10rem;
 }
 
-.pomodoro button {
+.start {
     cursor: pointer;
     border: none;
     padding: 0px 12px;
@@ -68,21 +66,65 @@ body {
     transition: color 0.5s ease-in-out 0s;
 }
 
-.pomodoro button:active,
-.pomodoro button.active {
-    transform: translateY(6px);
+.start:active,
+.start.active {
+    transform: translateY(3px);
     box-shadow: none;
 }
 
-.short-break .pomodoro button {
+.short-break .start {
     color: var(--short-break-color);
 }
 
-.long-break .pomodoro button {
+.long-break .start {
     color: var(--long-break-color);
 }
 
 .pomodoro .details {
     text-align-last: left;
     margin: 20px 0;
+}
+
+.controls {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status {
+    border: none;
+    color: white;
+    margin: 0px;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 2px 20px;
+    height: 28px;
+    cursor: pointer;
+    background: none;
+    font-weight: bold;
+}
+
+.status.active {
+    background: none rgba(0, 0, 0, 0.15);
+}
+
+.status:active {
+    transform: translateY(3px);
+}
+
+.details {
+    text-align: center;
+}
+
+.info {
+    font-size: 18px;
+    padding: 0 240px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.details h2 {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 20px;
 }
