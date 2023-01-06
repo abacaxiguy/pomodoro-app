@@ -17,9 +17,9 @@
 ---
 
 <p align="center">
-  <img src="./img/screenshot.png" width="91%"/>
-  <img src="./img/screenshot-shortbreak.png" width="45.2%"/>
-  <img src="./img/screenshot-longbreak.png" width="45.2%"/>
+  <a href="https://pomodoro-app-coral.vercel.app/"><img src="./img/screenshot.png" width="91%"/></a>
+  <a href="https://pomodoro-app-coral.vercel.app/"><img src="./img/screenshot-shortbreak.png" width="45.2%"/></a>
+  <a href="https://pomodoro-app-coral.vercel.app/"><img src="./img/screenshot-longbreak.png" width="45.2%"/></a>
 </p>
 
 <br />
