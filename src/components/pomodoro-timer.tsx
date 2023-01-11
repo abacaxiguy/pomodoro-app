@@ -113,17 +113,17 @@ export function PomodoroTimer(props: Props): JSX.Element {
             <div className="pomodoro">
                 <div className="controls">
                     <Button
-                        className={working ? "status active" : "status"}
+                        className={`status ${working ? "active" : ""}`}
                         text="Pomodoro"
                         onClick={togglePomodoro}
                     />
                     <Button
-                        className={shortBreak ? "status active" : "status"}
+                        className={`status ${shortBreak ? "active" : ""}`}
                         text="Short Break"
                         onClick={toggleShortBreak}
                     />
                     <Button
-                        className={longBreak ? "status active" : "status"}
+                        className={`status ${longBreak ? "active" : ""}`}
                         text="Long Break"
                         onClick={toggleLongBreak}
                     />
@@ -131,7 +131,7 @@ export function PomodoroTimer(props: Props): JSX.Element {
                 <Timer mainTime={mainTime} />
                 <Button
                     text={timeCounting ? "PAUSE" : "START"}
-                    className={timeCounting ? "active start" : "start"}
+                    className={`start ${timeCounting ? "active" : ""}`}
                     onClick={() => {
                         playClackSound();
                         setTimeCounting(!timeCounting);
